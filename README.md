@@ -2,13 +2,13 @@
 January 3, 2019
 
 Software authors:
-Lewis Blake, Colorado School of Mines (lblake@mines.edu)
-Dorit Hammerling, Colorado School of Mines (hammerling@mines.edu)
+Lewis Blake, Colorado School of Mines (lblake@mines.edu).
+Dorit Hammerling, Colorado School of Mines (hammerling@mines.edu).
 
 This code is based on the MRA model described in
 "A multi-resolution approximation for massive spatial datasets" by Matthias Katzfuss, 2017 in 
-the Journal of American Statistical Association (DOI: 10.1080/01621459.2015.1123632)
-Also at arXiv: https://arxiv.org/abs/1507.04789
+the Journal of American Statistical Association (DOI: 10.1080/01621459.2015.1123632).
+Also at arXiv: https://arxiv.org/abs/1507.04789 .
 References to this manuscript are found throughout the codebase.
 
 This MRA implementation differs from the Serial MRA implementation in a few key ways.
@@ -54,7 +54,7 @@ This command will launch a parallel pool of size NUM_WORKERS on the default clus
 Calling parpool only occurs in case where a parallel pool is not already active.
 If a parallel pool is already active, then adjusting NUM_WORKERS will not change the size of the parallel pool.
 If a parallel pool is already active and one desires to change the size of the pool, close the current pool, adjust NUM_WORKERS to the desired size, and rerun the main.m script.
-For further reference please see https://www.mathworks.com/help/distcomp/run-code-on-parallel-pools.html
+For further reference please see https://www.mathworks.com/help/distcomp/run-code-on-parallel-pools.html .
 
 ## PRELIMINARIES:
 
