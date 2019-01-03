@@ -73,10 +73,11 @@ Note that NUM_LEVELS_M is a positive integer.
 In user_input.m, the areas requiring user input are as follows:
 
 dataSource: | 'satellite' | 'simulated' |
-    - These are the dataSource's for the data provided. 
+    - These are the dataSource's for the data provided. Default is 'satellite'.
     - In order to use a different data set, see the section of load_data.m below and feed the case string for the data used to dataSource in user_input.m.
 
 calculationType: | 'prediction' | 'optimize' | 'likelihood' |
+Default is 'likelihood'.
 calculationType can be set to any of the following calculation modes:
 	- prediction: Uses given values for the parameters (theta and varEps) and just conducts spatial prediction. Parameters can be changed in load_data.m	
 	- optimize: Optimizes over the range, variance and measurement error. The range and variance parameters are stored as a vector: theta. The measurment error is stored as a double: varEps.	
@@ -94,11 +95,11 @@ offsetPercentage: Offset percentage from partition boundaries. Must be between 0
 This quantity determines the buffer between the boundaries of a region where knots can be placed.
 offsetPercentage is also used at the coarsest resolution to extend the maximal x and y domain boundaries as to include data points that may be exactly on the boundary within a region.
 The domain boundaries define a rectangular region determined by the minimal and maximal x and y coordinate locations.
-Preferably set offsetPercentage to be a smaller number (e.g. 0.01).
+Preferably set offsetPercentage to be a small number (e.g. 0.01).
 
 NUM_WORKERS: Number of workers in the parallel pool. See PARALLELIZATION above. Default is 4.
 
-verbose: Boolean variable indicating whether to produce progress indicators.
+verbose: Boolean variable indicating whether to produce progress indicators. Default is true.
 
 resultsFilePath: Optional file path to save results for each calculationType. 
 Set to be a string (e.g. resultsFilesPath = '/Users/JerryGarcia/Desktop/';). 
