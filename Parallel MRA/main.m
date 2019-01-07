@@ -18,7 +18,6 @@ end
 %% Build hierarchical grid structure using build_structure() function
 [ knots, ~, nRegions, outputData, predictionLocations ] = build_structure(NUM_LEVELS_M, NUM_PARTITIONS_J, NUM_KNOTS_r, domainBoundaries, offsetPercentage, verbose, data(:,1:3), predictionVector);
 %% Switch cases for calculationType
-% Potential optimization
 switch calculationType
     case 'optimize'        
         %% Optimize
