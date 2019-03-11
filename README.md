@@ -122,7 +122,7 @@ plotsFilePath: Optional file path to save prediction plots if plotting.
 Set to be a string (e.g. plotsFilesPath = '/Users/JerryGarcia/Pictures/';).
 By default plots are saved in the 'Plots' folder.
 
-User inputs relevant if calculationType = 'optimize'
+#### User inputs relevant if calculationType = 'optimize'
 
 lowerBound: Vector of lower-bound values required for the optimization search. Default is [0,0,0].
 
