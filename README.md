@@ -9,7 +9,7 @@ This code is based on the MRA model described in
 "A multi-resolution approximation for massive spatial datasets" by Matthias Katzfuss, 2017 in 
 the Journal of American Statistical Association (DOI: 10.1080/01621459.2015.1123632).
 Also at arXiv: https://arxiv.org/abs/1507.04789 .
-References to this manuscript are found throughout the codebase.
+References to this manuscript are throughout the codebase.
 
 This MRA implementation differs from the Serial MRA implementation in a few key ways.
 Here, the creation of the prior, posterior inference, and the spatial prediction occurs in parallel within shared memory.
